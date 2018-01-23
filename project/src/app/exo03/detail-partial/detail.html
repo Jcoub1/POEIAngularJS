@@ -1,0 +1,8 @@
+<div ng-controller="DetailCtrl as detail" ng-if="exo03.selectedElement.name === exo03.selectedElement.name"> 
+	<div ng-show="detail.cacherDetail == false" >
+		<h3>Details</h3>
+		<p>Titre : {{ exo03.selectedElement.name }}<p>
+		<p>Année : {{ exo03.selectedElement.year }}</p>
+	</div>
+	<button ng-click="detail.detailH()">{{ detail.cacherDetail == false ? 'Cacher !' : 'Montrer !' }}</button>
+</div>
