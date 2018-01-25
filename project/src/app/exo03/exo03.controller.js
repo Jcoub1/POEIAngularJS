@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-	function exo03Ctrl($location) {
+	function Exo03Ctrl($location) {
 		var vm = this;
 
 		vm.films = [
@@ -17,8 +17,8 @@
 		}
 	}
 	
-	exo03Ctrl.$inject = ['$location'];
+	Exo03Ctrl.$inject = ['$location'];
 	angular.module('daproject')
-    .controller('exo03Ctrl', exo03Ctrl);
+    .controller('Exo03Ctrl', Exo03Ctrl);
 
 })();
