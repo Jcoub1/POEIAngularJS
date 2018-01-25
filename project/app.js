@@ -25,6 +25,11 @@
         templateUrl: 'src/app/exo03/exo03.html',
         controller: 'exo03Ctrl',
         controllerAs: 'exo03'
+      })
+      .when('/final', {
+        templateUrl: 'src/app/final/final.html',
+        controller: 'FinalCtrl',
+        controllerAs: 'Final'
       });
   }
 
