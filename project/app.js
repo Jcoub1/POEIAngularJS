@@ -40,6 +40,11 @@
         templateUrl: 'src/app/more/more.html',
         controller: 'MoreCtrl',
         controllerAs: 'more'
+      })
+      .when('/cocktailDetail', {
+        templateUrl: 'src/app/cocktailDetail/cocktailDetail.html',
+        controller: 'CocktailDetailCtrl',
+        controllerAs: 'CocktailDetail'
       });
   }
 

@@ -1,0 +1,14 @@
+<div id='troiscent'>
+	<div class="centreplz">
+		<input ng-model="Final.value" />
+		<button ng-click="Final.save(Final.value)">Buvons !</button>
+	</div>
+	<div class="centreplz">
+		<p id="white" ng-show="Final.searchConfig.ingredient != ''">Ingrédient : {{Final.searchConfig.ingredient}}</p>
+	</div>
+	<ul>
+		<li ng-repeat="cocktail in Final.cocktailSearch.cocktailList">
+			<cocktail cocktail-Element='cocktail' ng-click="Final.cocktailSearch.getCocktailDetails(cocktail.idDrink)"></cocktail>
+		</li>
+	</ul>
+</div>
