@@ -1,0 +1,5 @@
+<div class="centerplz" id="colorplz">
+	<img src="http://openweathermap.org/img/w/{{weather.meteoElement.weather[0].icon}}.png"/>
+	<p ng-show="weather.meteoElement.main.temp != null">Température : {{weather.meteoElement.main.temp}}°C</p>
+	<p ng-show="weather.meteoElement.main.temp != null">Date : {{weather.meteoElement.dt_txt}}</p>
+</div>

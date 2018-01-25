@@ -1,0 +1,16 @@
+<div>
+	<div class="centreplz">
+		<input ng-model="exo04.value" />
+		<button ng-click="exo04.console(exo04.value)">Search</button>
+	</div>
+	<div class="centreplz">
+		<p ng-show="exo04.settingService.city != ''">Temps actuel à {{exo04.settingService.city}}</p>
+	</div>
+
+	<div class="centreplz">
+		<img src="http://openweathermap.org/img/w/{{exo04.meteoService.meteoListe[0].weather[0].icon}}.png"/>
+		<p ng-show="exo04.settingService.city != ''">{{exo04.meteoService.meteoListe[0].main.temp}}°C</p>
+	</div>
+	<a class="centreplz" ng-click="exo04.more()">More</a>
+	
+</div>
